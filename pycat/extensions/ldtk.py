@@ -95,7 +95,7 @@ class LdtkLayeredLevel:
                 y=scale*e.y,
                 scale_x=scale*e.width,
                 scale_y=scale*e.height,
-                tags=e.tags,
+                tags=['ldtk_'+t for t in e.tags],
                 opacity=100 if debug_entities else 0,
                 layer=debug_entities_layer)
             if debug_entities:
